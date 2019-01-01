@@ -15,7 +15,7 @@ use yii2lab\test\Test\Unit;
 
 class ItemTest extends Unit {
 	
-	const PACKAGE = 'yii2lab/yii2-rbac';
+	const PACKAGE = 'yii2bundle/yii2-rbac';
 	const DATA_ALIAS = '@common/runtime/test/rbac';
 	const ADMIN_ID = 381949;
 	
