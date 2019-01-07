@@ -8,8 +8,8 @@ use yii2lab\rbac\domain\enums\RbacPermissionEnum;
 class Module extends \mdm\admin\Module
 {
 
-    var $controllerNamespace = 'mdm\admin\controllers';
-    var $viewPath = '//vendor/mdmsoft/yii2-admin/views';
+    public $controllerNamespace = 'mdm\admin\controllers';
+    public $viewPath = '//vendor/mdmsoft/yii2-admin/views';
     public $controllerMap = [
         'assignment' => [
             'class' => 'yii2lab\rbac\admin\controllers\AssignmentController',
