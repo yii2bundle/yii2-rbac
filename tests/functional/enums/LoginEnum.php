@@ -2,7 +2,7 @@
 
 namespace tests\functional\enums;
 
-use yii2lab\extension\enum\base\BaseEnum;
+use yii2rails\extension\enum\base\BaseEnum;
 
 class LoginEnum extends BaseEnum {
 	

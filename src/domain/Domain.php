@@ -2,7 +2,7 @@
 
 namespace yii2lab\rbac\domain;
 
-use yii2lab\domain\enums\Driver;
+use yii2rails\domain\enums\Driver;
 use yii2lab\rbac\domain\repositories\disc\ItemRepository;
 use yii2lab\rbac\domain\repositories\disc\RuleRepository;
 
@@ -18,7 +18,7 @@ use yii2lab\rbac\domain\repositories\disc\RuleRepository;
  * @property-read \yii2lab\rbac\domain\interfaces\services\RoleInterface $role
  * @property-read \yii2lab\rbac\domain\interfaces\services\ConstInterface $const
  */
-class Domain extends \yii2lab\domain\Domain {
+class Domain extends \yii2rails\domain\Domain {
 	
 	public function config() {
 		return [

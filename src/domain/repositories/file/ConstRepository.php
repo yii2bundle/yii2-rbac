@@ -2,7 +2,7 @@
 
 namespace yii2lab\rbac\domain\repositories\file;
 
-use yii2lab\domain\repositories\BaseRepository;
+use yii2rails\domain\repositories\BaseRepository;
 use yii2lab\rbac\domain\helpers\GenerateHelper;
 
 class ConstRepository extends BaseRepository {

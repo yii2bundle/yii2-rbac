@@ -2,7 +2,7 @@
 
 namespace yii2lab\rbac\domain\services;
 
-use yii2lab\domain\services\base\BaseActiveService;
+use yii2rails\domain\services\base\BaseActiveService;
 use yii2lab\rbac\domain\interfaces\services\AssignmentInterface;
 use yii2lab\rbac\domain\repositories\disc\AssignmentRepository;
 

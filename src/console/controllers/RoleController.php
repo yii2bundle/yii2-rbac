@@ -4,8 +4,8 @@ namespace yii2lab\rbac\console\controllers;
 
 use Yii;
 use yii\web\UnauthorizedHttpException;
-use yii2lab\extension\console\base\Controller;
-use yii2lab\extension\web\helpers\Behavior;
+use yii2rails\extension\console\base\Controller;
+use yii2rails\extension\web\helpers\Behavior;
 
 class RoleController extends Controller
 {

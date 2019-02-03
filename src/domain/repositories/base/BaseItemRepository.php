@@ -2,7 +2,7 @@
 
 namespace yii2lab\rbac\domain\repositories\base;
 
-use yii2lab\domain\repositories\BaseRepository;
+use yii2rails\domain\repositories\BaseRepository;
 use yii\rbac\Item;
 use yii2lab\rbac\domain\helpers\ItemHelper;
 use yii\rbac\Permission;

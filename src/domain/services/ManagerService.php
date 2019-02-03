@@ -6,8 +6,8 @@ use Yii;
 use yii\rbac\Assignment;
 use yii\web\ForbiddenHttpException;
 use yii\web\UnauthorizedHttpException;
-use yii2lab\domain\services\base\BaseService;
-use yii2lab\extension\yii\helpers\ArrayHelper;
+use yii2rails\domain\services\base\BaseService;
+use yii2rails\extension\yii\helpers\ArrayHelper;
 use yii2lab\rbac\domain\enums\RbacPermissionEnum;
 use yii2lab\rbac\domain\interfaces\services\ManagerInterface;
 

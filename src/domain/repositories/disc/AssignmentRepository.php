@@ -4,7 +4,7 @@ namespace yii2lab\rbac\domain\repositories\disc;
 
 use yii\base\InvalidArgumentException;
 use yii\rbac\Assignment;
-use yii2lab\domain\repositories\BaseRepository;
+use yii2rails\domain\repositories\BaseRepository;
 use yii2lab\rbac\domain\helpers\DiscHelper;
 use yii2lab\rbac\domain\interfaces\repositories\AssignmentInterface;
 

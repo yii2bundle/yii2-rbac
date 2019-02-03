@@ -5,7 +5,7 @@ namespace yii2lab\rbac\domain\services;
 use yii\base\InvalidConfigException;
 use yii\rbac\Item;
 use yii\rbac\Rule;
-use yii2lab\domain\services\base\BaseService;
+use yii2rails\domain\services\base\BaseService;
 use yii2lab\rbac\domain\interfaces\services\RuleInterface;
 use yii2lab\rbac\domain\repositories\disc\RuleRepository;
 

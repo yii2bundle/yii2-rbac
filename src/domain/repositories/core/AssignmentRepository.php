@@ -4,7 +4,7 @@ namespace yii2lab\rbac\domain\repositories\core;
 
 use Yii;
 use yii\rbac\Assignment;
-use yii2lab\domain\repositories\BaseRepository;
+use yii2rails\domain\repositories\BaseRepository;
 use yii2lab\rbac\domain\interfaces\repositories\AssignmentInterface;
 use yii2module\account\domain\v2\entities\LoginEntity;
 use yii2lab\rbac\domain\helpers\AssignmentHelper;

@@ -2,7 +2,7 @@
 
 namespace yii2lab\rbac\domain\entities;
 
-use yii2lab\domain\BaseEntity;
+use yii2rails\domain\BaseEntity;
 
 class RuleEntity extends BaseEntity {
 

@@ -7,9 +7,9 @@ use common\runtime\test\rbac\RoleEnum;
 use Yii;
 use yii\helpers\ArrayHelper;
 use yii\rbac\Item;
-use yii2lab\domain\enums\Driver;
-use yii2lab\domain\helpers\DomainHelper;
-use yii2lab\extension\yii\helpers\FileHelper;
+use yii2rails\domain\enums\Driver;
+use yii2rails\domain\helpers\DomainHelper;
+use yii2rails\extension\yii\helpers\FileHelper;
 use yii2lab\test\helpers\DataHelper;
 use yii2lab\test\Test\Unit;
 

@@ -2,7 +2,7 @@
 
 namespace yii2lab\rbac\domain\services;
 
-use yii2lab\domain\services\base\BaseService;
+use yii2rails\domain\services\base\BaseService;
 use yii2lab\rbac\domain\interfaces\services\RoleInterface;
 
 /**

@@ -2,7 +2,7 @@
 
 namespace yii2lab\rbac\admin\helpers;
 
-use yii2lab\extension\menu\interfaces\MenuInterface;
+use yii2rails\extension\menu\interfaces\MenuInterface;
 use yii2lab\rbac\domain\enums\RbacPermissionEnum;
 
 class Menu implements MenuInterface {

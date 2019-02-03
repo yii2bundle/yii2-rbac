@@ -7,8 +7,8 @@ use yii\base\InvalidArgumentException;
 use yii\rbac\Item;
 use yii\rbac\ManagerInterface;
 use yii\rbac\Rule;
-use yii2lab\extension\common\exceptions\DeprecatedException;
-use yii2lab\extension\develop\helpers\ReleaseHelper;
+use yii2rails\extension\common\exceptions\DeprecatedException;
+use yii2rails\extension\develop\helpers\ReleaseHelper;
 
 class PhpManager extends Component implements ManagerInterface
 {

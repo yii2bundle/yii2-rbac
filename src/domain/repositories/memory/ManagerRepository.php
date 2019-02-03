@@ -3,7 +3,7 @@
 namespace yii2lab\rbac\domain\repositories\memory;
 
 use yii\helpers\ArrayHelper;
-use yii2lab\domain\repositories\BaseRepository;
+use yii2rails\domain\repositories\BaseRepository;
 use Yii;
 use yii2lab\rbac\domain\enums\RbacPermissionEnum;
 use yii2lab\rbac\domain\interfaces\repositories\ManagerInterface;
