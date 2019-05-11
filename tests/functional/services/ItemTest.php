@@ -17,7 +17,7 @@ class ItemTest extends Unit {
 	
 	const PACKAGE = 'yii2bundle/yii2-rbac';
 	const DATA_ALIAS = '@common/runtime/test/rbac';
-	const ADMIN_ID = 381949;
+	const ADMIN_ID = 1;
 	
 	public function testInit() {
 		$itemService = $this->forgeDomain()->item;
