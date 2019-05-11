@@ -6,7 +6,7 @@ use yii2lab\test\helpers\TestHelper;
 $config = [
 	'servers' => [
 		'filedb' => [
-			'path' => '@yii2module/account/domain/v2/fixtures/data',
+			'path' => '@yii2module/account/domain/v3/fixtures/data',
 		],
 	],
 ];

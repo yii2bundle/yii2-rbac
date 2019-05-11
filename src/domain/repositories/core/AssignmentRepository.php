@@ -4,9 +4,9 @@ namespace yii2lab\rbac\domain\repositories\core;
 
 use Yii;
 use yii\rbac\Assignment;
+use yii2module\account\domain\v3\entities\IdentityEntity;
 use yii2rails\domain\repositories\BaseRepository;
 use yii2lab\rbac\domain\interfaces\repositories\AssignmentInterface;
-use yii2module\account\domain\v2\entities\LoginEntity;
 use yii2lab\rbac\domain\helpers\AssignmentHelper;
 
 class AssignmentRepository extends BaseRepository implements AssignmentInterface {
@@ -30,7 +30,7 @@ class AssignmentRepository extends BaseRepository implements AssignmentInterface
 		if(empty($userId)) {
 			return [];
 		}
-		/** @var LoginEntity $identity */
+		/** @var IdentityEntity $identity */
 		$identity = Yii::$app->user->identity;
 		if($identity->id == $userId) {
 			return AssignmentHelper::forge($userId, $identity->roles);

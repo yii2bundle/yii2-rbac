@@ -4,7 +4,7 @@ namespace yii2lab\rbac\admin\controllers;
 
 use mdm\admin\models\Assignment;
 use Yii;
-use yii2module\account\domain\v2\entities\LoginEntity;
+use yii2module\account\domain\v3\entities\IdentityEntity;
 
 class AssignmentController extends \mdm\admin\controllers\AssignmentController {
 	
@@ -67,7 +67,7 @@ class AssignmentController extends \mdm\admin\controllers\AssignmentController {
 	public function actionRevoke($id)
 	{
 		$items = Yii::$app->getRequest()->post('items', []);
-		/** @var LoginEntity $user */
+		/** @var IdentityEntity $user */
 		$user = \App::$domain->account->login->oneById($id);
 		if(count($user->roles) > 1) {
 			foreach($items as $role) {
