@@ -3,6 +3,7 @@
 namespace yii2lab\rbac\api\controllers;
 
 use yii2lab\geo\domain\enums\GeoPermissionEnum;
+use yii2lab\rbac\domain\enums\RbacPermissionEnum;
 use yii2lab\rest\domain\rest\ActiveControllerWithQuery as Controller;
 use yii2rails\extension\web\helpers\Behavior;
 
@@ -18,7 +19,7 @@ class AssignmentController extends Controller
 		return [
             'cors' => Behavior::cors(),
 		    'authenticator' => Behavior::auth(['create', 'update', 'delete']),
-            //'access' => Behavior::access(GeoPermissionEnum::CITY_MANAGE, ['create', 'update', 'delete']),
+            'access' => Behavior::access(RbacPermissionEnum::MANAGE, ['create', 'update', 'delete']),
 		];
 	}
 	
