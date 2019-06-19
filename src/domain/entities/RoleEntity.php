@@ -21,4 +21,12 @@ class RoleEntity extends BaseEntity {
 	protected $rule_name;
 	protected $data;
 
+    public function rules()
+    {
+        return [
+            ['name', 'required'],
+            ['name', 'trim'],
+        ];
+    }
+
 }

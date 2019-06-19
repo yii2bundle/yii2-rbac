@@ -2,6 +2,11 @@
 
 namespace yii2lab\rbac\domain\services;
 
+use yii\web\NotFoundHttpException;
+use yii2lab\rbac\domain\entities\AssignmentEntity;
+use yii2rails\domain\data\Query;
+use yii2rails\domain\exceptions\UnprocessableEntityHttpException;
+use yii2rails\domain\helpers\ErrorCollection;
 use yii2rails\domain\services\base\BaseActiveService;
 use yii2lab\rbac\domain\interfaces\services\AssignmentInterface;
 use yii2lab\rbac\domain\repositories\disc\AssignmentRepository;
@@ -24,8 +29,57 @@ class AssignmentService extends BaseActiveService implements AssignmentInterface
 	/*private function allByUserId(int $userId) {
 		return $this->repository->allByUserId($userId);
 	}*/
-	
-	public function allRoleNamesByUserId(int $userId) {
+
+	public function oneById($id, Query $query = null)
+    {
+        list($userId, $itemName) = explode(BL, $id);
+        $query = new Query;
+        $query->andWhere([
+            'item_name' => $itemName,
+            'user_id' => $userId,
+        ]);
+        $assignmentEntity = $this->one($query);
+        return $assignmentEntity;
+    }
+
+    public function deleteById($id)
+    {
+        $assignmentEntity = $this->oneById($id);
+        $this->revoke($assignmentEntity->item_name, $assignmentEntity->user_id);
+        //return $this->repository->delete($assignmentEntity);
+    }
+
+    public function create($data)
+    {
+        $assignmentEntity = new AssignmentEntity($data);
+
+        try {
+            \App::$domain->rbac->role->oneById($assignmentEntity->item_name);
+        } catch (NotFoundHttpException $e) {
+            $error = new ErrorCollection;
+            $error->add('item_name', 'main', 'not_found');
+            throw new UnprocessableEntityHttpException($error);
+        }
+
+        try {
+            \App::$domain->account->login->oneById($assignmentEntity->user_id);
+        } catch (NotFoundHttpException $e) {
+            $error = new ErrorCollection;
+            $error->add('user_id', 'main', 'not_found');
+            throw new UnprocessableEntityHttpException($error);
+        }
+
+        $isHasRole = $this->isHasRole($assignmentEntity->user_id, $assignmentEntity->item_name);
+        if($isHasRole) {
+            $error = new ErrorCollection;
+            $error->add('user_id', 'main', 'already_exists');
+            throw new UnprocessableEntityHttpException($error);
+        }
+
+        $this->assign($assignmentEntity->item_name, $assignmentEntity->user_id);
+    }
+
+    public function allRoleNamesByUserId(int $userId) {
 		return $this->repository->allRoleNamesByUserId($userId);
 	}
 	

@@ -73,14 +73,13 @@ class RoleRepository extends BaseRepository implements RoleInterface {
 
     public function updateById($id, $data)
     {
-        //d($data);
         $item = \App::$domain->rbac->item->getRole($id);
         if(empty($item)) {
             throw new NotFoundHttpException();
         }
-        //$data['name'] = $item->name;
+        $data['name'] = $id;
         $this->forgeItemFromData($item, $data);
-        $this->checkExistsByName($item);
+        //$this->checkExistsByName($item);
         \App::$domain->rbac->item->updateItem($id, $item);
     }
 
