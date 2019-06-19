@@ -22,7 +22,7 @@ class RoleController extends Controller
 	public function actionUpdate()
 	{
 		try{
-			\App::$domain->rbac->role->update();
+			\App::$domain->rbac->role->updateAll();
 		}catch(UnauthorizedHttpException $e){
 			Yii::$app->cache->set('identity', null);
 			\App::$domain->account->auth->breakSession();

@@ -17,6 +17,7 @@ use yii2lab\rbac\domain\repositories\disc\RuleRepository;
  * @property-read \yii2lab\rbac\domain\interfaces\repositories\RepositoriesInterface $repositories
  * @property-read \yii2lab\rbac\domain\interfaces\services\RoleInterface $role
  * @property-read \yii2lab\rbac\domain\interfaces\services\ConstInterface $const
+ * @property-read \yii2lab\rbac\domain\interfaces\services\PermissionInterface $permission
  */
 class Domain extends \yii2rails\domain\Domain {
 	
@@ -29,7 +30,8 @@ class Domain extends \yii2rails\domain\Domain {
 					'ruleFile' => '@common/data/rbac/rules.php',
 					//'defaultRoles' => ['rGuest'],
 				],
-				'role' => Driver::TPS,
+				'role' => Driver::BRIDGE,
+                'permission' => Driver::BRIDGE,
 				'const' => Driver::FILE,
 				'assignment' => Driver::primary(),
 				'manager' => Driver::MEMORY,
@@ -41,9 +43,10 @@ class Domain extends \yii2rails\domain\Domain {
 				],
 				'misc' => Driver::DISC,
 			], 
-			'services' => [ 
+			'services' => [
 				'rule',
 				'role',
+				'permission',
 				'const',
 				'assignment',
 				'manager',
@@ -51,7 +54,7 @@ class Domain extends \yii2rails\domain\Domain {
 					'defaultRoles' => ['rGuest'],
 				]*/,
 				'misc',
-			], 
+			],
 		];
 	}
 	

@@ -1,0 +1,32 @@
+<?php
+
+namespace yii2lab\rbac\domain\entities;
+
+use yii2rails\domain\BaseEntity;
+
+/**
+ * Class PermissionEntity
+ * 
+ * @package yii2bundle\rbac\domain\entities
+ * 
+ * @property $name
+ * @property $description
+ * @property $rule_name
+ * @property $data
+ */
+class PermissionEntity extends BaseEntity {
+
+	protected $name;
+	protected $description;
+	protected $rule_name;
+	protected $data;
+
+	public function rules()
+    {
+        return [
+            ['name', 'required'],
+            ['name', 'trim'],
+        ];
+    }
+
+}
