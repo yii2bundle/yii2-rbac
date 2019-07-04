@@ -14,19 +14,6 @@ use yii2rails\domain\BaseEntity;
  * @property $rule_name
  * @property $data
  */
-class PermissionEntity extends BaseEntity {
-
-	protected $name;
-	protected $description;
-	protected $rule_name;
-	protected $data;
-
-	public function rules()
-    {
-        return [
-            ['name', 'required'],
-            ['name', 'trim'],
-        ];
-    }
+class PermissionEntity extends BaseItemEntity {
 
 }

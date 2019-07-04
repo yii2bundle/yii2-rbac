@@ -13,20 +13,8 @@ use yii2rails\domain\BaseEntity;
  * @property $description
  * @property $rule_name
  * @property $data
+ * @property $children
  */
-class RoleEntity extends BaseEntity {
-
-	protected $name;
-	protected $description;
-	protected $rule_name;
-	protected $data;
-
-    public function rules()
-    {
-        return [
-            ['name', 'required'],
-            ['name', 'trim'],
-        ];
-    }
+class RoleEntity extends BaseItemEntity {
 
 }
