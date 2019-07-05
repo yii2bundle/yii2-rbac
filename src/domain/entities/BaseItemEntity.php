@@ -5,7 +5,7 @@ namespace yii2lab\rbac\domain\entities;
 use yii2rails\domain\BaseEntity;
 
 /**
- * Class RoleEntity
+ * Class BaseItemEntity
  * 
  * @package yii2lab\rbac\domain\entities
  * 

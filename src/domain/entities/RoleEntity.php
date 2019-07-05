@@ -9,12 +9,12 @@ use yii2rails\domain\BaseEntity;
  * 
  * @package yii2lab\rbac\domain\entities
  * 
- * @property $name
- * @property $description
- * @property $rule_name
- * @property $data
- * @property $children
+ * @property RoleEntity[] $roles
+ * @property PermissionEntity[] $permissions
  */
 class RoleEntity extends BaseItemEntity {
+
+    protected $roles;
+    protected $permissions;
 
 }
