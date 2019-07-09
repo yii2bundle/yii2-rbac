@@ -1,0 +1,41 @@
+description: "RBAC. Полномочия"
+get:
+    description: "Получть список полномочий"
+    is: !include /../../../vendor/yii2bundle/yii2-rest/src/domain/docs/is/all.raml
+    responses:
+        200:
+            body:
+                application/json:
+                    example: !include example/all-response-body.json
+post:
+    securedBy: [Auth]
+    description: "Создать полномочие"
+    is: !include /../../../vendor/yii2bundle/yii2-rest/src/domain/docs/is/create.raml
+    body:
+        application/json:
+            example: !include example/create-request-body.json
+
+/{name}:
+    uriParameters:
+        name:
+            description: "Имя полномочия"
+            type: string
+    get:
+        description: "Получить полномочие"
+        is: !include /../../../vendor/yii2bundle/yii2-rest/src/domain/docs/is/one.raml
+        responses:
+            200:
+                body:
+                    application/json:
+                        example: !include example/one-response-body.json
+    put:
+        securedBy: [Auth]
+        description: "Изменить полномочие"
+        is: !include /../../../vendor/yii2bundle/yii2-rest/src/domain/docs/is/update.raml
+        body:
+            application/json:
+                example: !include example/update-request-body.json
+    delete:
+        securedBy: [Auth]
+        description: "Удалить полномочие"
+        is: !include /../../../vendor/yii2bundle/yii2-rest/src/domain/docs/is/delete.raml

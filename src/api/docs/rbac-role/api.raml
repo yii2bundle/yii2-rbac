@@ -1,0 +1,41 @@
+description: "RBAC. Роли"
+get:
+    description: "Получть список "
+    is: !include /../../../vendor/yii2bundle/yii2-rest/src/domain/docs/is/all.raml
+    responses:
+        200:
+            body:
+                application/json:
+                    example: !include example/all-response-body.json
+post:
+    securedBy: [Auth]
+    description: "Создать роль"
+    is: !include /../../../vendor/yii2bundle/yii2-rest/src/domain/docs/is/create.raml
+    body:
+        application/json:
+            example: !include example/create-request-body.json
+
+/{name}:
+    uriParameters:
+        name:
+            description: "Имя роли"
+            type: string
+    get:
+        description: "Получить роль"
+        is: !include /../../../vendor/yii2bundle/yii2-rest/src/domain/docs/is/one.raml
+        responses:
+            200:
+                body:
+                    application/json:
+                        example: !include example/one-response-body.json
+    put:
+        securedBy: [Auth]
+        description: "Изменить роль"
+        is: !include /../../../vendor/yii2bundle/yii2-rest/src/domain/docs/is/update.raml
+        body:
+            application/json:
+                example: !include example/update-request-body.json
+    delete:
+        securedBy: [Auth]
+        description: "Удалить роль"
+        is: !include /../../../vendor/yii2bundle/yii2-rest/src/domain/docs/is/delete.raml
