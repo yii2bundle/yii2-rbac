@@ -2,6 +2,7 @@
 
 namespace yii2lab\rbac\domain\rbac;
 
+use common\enums\rbac\PermissionEnum;
 use yii\base\Component;
 use yii\base\InvalidArgumentException;
 use yii\rbac\Item;
@@ -18,7 +19,7 @@ class PhpManager extends Component implements ManagerInterface
 	 */
 	public function checkAccess($userId, $permissionName, $params = [])
 	{
-		return \App::$domain->rbac->manager->checkAccess($userId, $permissionName, $params = []);
+		return \App::$domain->rbac->manager->checkAccess($userId, $permissionName, $params);
 	}
 	
 	/**
