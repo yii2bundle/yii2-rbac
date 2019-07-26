@@ -19,7 +19,7 @@ class RbacPermissionTest extends BaseActiveApiTest
     public function testAll()
     {
         AuthTestHelper::authByLogin('admin');
-        $this->readCollection($this->resource, [], RbacSchema::$item, 43);
+        $this->readCollection($this->resource, [], RbacSchema::$item);
     }
 
     public function testOne()
