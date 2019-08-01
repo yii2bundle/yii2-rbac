@@ -19,7 +19,7 @@ class RbacAssignmentTest extends BaseActiveApiTest
     public function testAll()
     {
         AuthTestHelper::authByLogin('admin');
-        $this->readCollection($this->resource, [], RbacSchema::$assignment, 9);
+        $this->readCollection($this->resource, [], RbacSchema::$assignment, true);
     }
 
     public function testOne()
