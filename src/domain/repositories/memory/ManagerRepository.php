@@ -1,19 +1,19 @@
 <?php
 
-namespace yii2lab\rbac\domain\repositories\memory;
+namespace yii2bundle\rbac\domain\repositories\memory;
 
 use yii\helpers\ArrayHelper;
 use yii2rails\domain\repositories\BaseRepository;
 use Yii;
-use yii2lab\rbac\domain\enums\RbacPermissionEnum;
-use yii2lab\rbac\domain\interfaces\repositories\ManagerInterface;
+use yii2bundle\rbac\domain\enums\RbacPermissionEnum;
+use yii2bundle\rbac\domain\interfaces\repositories\ManagerInterface;
 
 /**
  * Class ManagerRepository
  *
- * @package yii2lab\rbac\domain\repositories\memory
+ * @package yii2bundle\rbac\domain\repositories\memory
  *
- * @property \yii2lab\rbac\domain\Domain $domain
+ * @property \yii2bundle\rbac\domain\Domain $domain
  */
 class ManagerRepository extends BaseRepository implements ManagerInterface {
 	

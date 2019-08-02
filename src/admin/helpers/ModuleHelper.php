@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2lab\rbac\admin\helpers;
+namespace yii2bundle\rbac\admin\helpers;
 
 use yii2rails\extension\web\helpers\Behavior;
-use yii2lab\rbac\domain\enums\RbacPermissionEnum;
+use yii2bundle\rbac\domain\enums\RbacPermissionEnum;
 
 class ModuleHelper {
 	
@@ -12,7 +12,7 @@ class ModuleHelper {
             'class' => 'mdm\admin\Module',
             'controllerMap' => [
                 'assignment' => [
-                    'class' => 'yii2lab\rbac\admin\controllers\AssignmentController',
+                    'class' => 'yii2bundle\rbac\admin\controllers\AssignmentController',
                     'userClassName' => 'yii2module\account\domain\v3\models\User',
                     'usernameField' => 'login',
                 ],

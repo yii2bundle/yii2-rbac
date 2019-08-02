@@ -1,19 +1,19 @@
 <?php
 
-namespace yii2lab\rbac\domain\repositories\disc;
+namespace yii2bundle\rbac\domain\repositories\disc;
 
 use yii\base\InvalidArgumentException;
 use yii\rbac\Assignment;
 use yii2rails\domain\repositories\BaseRepository;
-use yii2lab\rbac\domain\helpers\DiscHelper;
-use yii2lab\rbac\domain\interfaces\repositories\AssignmentInterface;
+use yii2bundle\rbac\domain\helpers\DiscHelper;
+use yii2bundle\rbac\domain\interfaces\repositories\AssignmentInterface;
 
 /**
  * Class AssignmentRepository
  *
- * @package yii2lab\rbac\domain\repositories\disc
+ * @package yii2bundle\rbac\domain\repositories\disc
  *
- * @property \yii2lab\rbac\domain\Domain $domain
+ * @property \yii2bundle\rbac\domain\Domain $domain
  */
 class AssignmentRepository extends BaseRepository implements AssignmentInterface {
 	

@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\domain\enums;
+namespace yii2bundle\rbac\domain\enums;
 
 use yii2rails\extension\enum\base\BaseEnum;
 

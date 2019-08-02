@@ -1,12 +1,12 @@
 <?php
 
-namespace yii2lab\rbac\domain\repositories\bridge;
+namespace yii2bundle\rbac\domain\repositories\bridge;
 
 use yii\rbac\Permission;
-use yii2lab\rbac\domain\entities\PermissionEntity;
-use yii2lab\rbac\domain\entities\RoleEntity;
-use yii2lab\rbac\domain\enums\ItemTypeEnum;
-use yii2lab\rbac\domain\interfaces\repositories\PermissionInterface;
+use yii2bundle\rbac\domain\entities\PermissionEntity;
+use yii2bundle\rbac\domain\entities\RoleEntity;
+use yii2bundle\rbac\domain\enums\ItemTypeEnum;
+use yii2bundle\rbac\domain\interfaces\repositories\PermissionInterface;
 use yii2rails\domain\repositories\BaseRepository;
 use yii2rails\domain\data\Query;
 use yii\helpers\ArrayHelper;
@@ -23,9 +23,9 @@ use yii2rails\extension\enum\base\BaseEnum;
 /**
  * Class PermissionRepository
  *
- * @package yii2lab\rbac\domain\repositories\bridge
+ * @package yii2bundle\rbac\domain\repositories\bridge
  *
- * @property-read \yii2lab\rbac\domain\Domain $domain
+ * @property-read \yii2bundle\rbac\domain\Domain $domain
  */
 class BaseItemRepository extends BaseRepository {
 

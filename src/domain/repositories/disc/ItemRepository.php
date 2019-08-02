@@ -1,18 +1,18 @@
 <?php
 
-namespace yii2lab\rbac\domain\repositories\disc;
+namespace yii2bundle\rbac\domain\repositories\disc;
 
-use yii2lab\rbac\domain\helpers\DiscHelper;
-use yii2lab\rbac\domain\helpers\ItemHelper;
-use yii2lab\rbac\domain\interfaces\repositories\ItemInterface;
-use yii2lab\rbac\domain\repositories\base\BaseItemRepository;
+use yii2bundle\rbac\domain\helpers\DiscHelper;
+use yii2bundle\rbac\domain\helpers\ItemHelper;
+use yii2bundle\rbac\domain\interfaces\repositories\ItemInterface;
+use yii2bundle\rbac\domain\repositories\base\BaseItemRepository;
 
 /**
  * Class ItemRepository
  *
- * @package yii2lab\rbac\domain\repositories\disc
+ * @package yii2bundle\rbac\domain\repositories\disc
  *
- * @property \yii2lab\rbac\domain\Domain $domain
+ * @property \yii2bundle\rbac\domain\Domain $domain
  */
 class ItemRepository extends BaseItemRepository implements ItemInterface {
 	

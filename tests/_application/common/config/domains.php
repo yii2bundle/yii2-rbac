@@ -3,12 +3,12 @@
 use yii\helpers\ArrayHelper;
 use yii2lab\test\helpers\TestHelper;
 use yii2rails\domain\enums\Driver;
-use yii2lab\rbac\domain\repositories\disc\ItemRepository;
-use yii2lab\rbac\domain\repositories\disc\RuleRepository;
+use yii2bundle\rbac\domain\repositories\disc\ItemRepository;
+use yii2bundle\rbac\domain\repositories\disc\RuleRepository;
 
 $config = [
     'rbac' => [
-	    'class' => 'yii2lab\rbac\domain\Domain',
+	    'class' => 'yii2bundle\rbac\domain\Domain',
         'repositories' => [
             'rule' => [
                 'ruleFile' => '@vendor/yii2tool/yii2-test/src/base/_application/common/data/rbac/rules.php',

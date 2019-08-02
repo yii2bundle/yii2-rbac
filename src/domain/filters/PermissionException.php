@@ -1,12 +1,12 @@
 <?php
 
-namespace yii2lab\rbac\domain\filters;
+namespace yii2bundle\rbac\domain\filters;
 
 use Yii;
 use yii\helpers\Inflector;
 use yii2rails\extension\scenario\base\BaseScenario;
-use yii2module\error\domain\helpers\CodeHelper;
-use yii2module\error\domain\helpers\OutputHelper;
+use yii2bundle\error\domain\helpers\CodeHelper;
+use yii2bundle\error\domain\helpers\OutputHelper;
 
 class PermissionException extends BaseScenario {
 	

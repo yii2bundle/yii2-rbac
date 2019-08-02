@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\domain\repositories\traits;
+namespace yii2bundle\rbac\domain\repositories\traits;
 
 use Yii;
 use yii\db\ActiveRecord;
@@ -10,12 +10,12 @@ use yii\rbac\Permission;
 use yii\rbac\Role;
 use yii\web\NotFoundHttpException;
 use yii2rails\domain\data\Query;
-use yii2lab\rbac\domain\helpers\AssignmentHelper;
+use yii2bundle\rbac\domain\helpers\AssignmentHelper;
 
 /**
  * Trait AssignmentTrait
  *
- * @package yii2lab\rbac\domain\repositories\traits
+ * @package yii2bundle\rbac\domain\repositories\traits
  *
  * @property ActiveRecord $model
  */

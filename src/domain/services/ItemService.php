@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\domain\services;
+namespace yii2bundle\rbac\domain\services;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -9,15 +9,15 @@ use yii\rbac\Item;
 use yii\rbac\Permission;
 use yii\rbac\Role;
 use yii2rails\domain\services\base\BaseService;
-use yii2lab\rbac\domain\interfaces\services\ItemInterface;
-use yii2lab\rbac\domain\repositories\disc\ItemRepository;
+use yii2bundle\rbac\domain\interfaces\services\ItemInterface;
+use yii2bundle\rbac\domain\repositories\disc\ItemRepository;
 
 /**
  * Class ItemService
  *
- * @package yii2lab\rbac\domain\services
+ * @package yii2bundle\rbac\domain\services
  *
- * @property \yii2lab\rbac\domain\Domain $domain
+ * @property \yii2bundle\rbac\domain\Domain $domain
  * @property ItemRepository $repository
  * @property-read array $defaultRoles
  */

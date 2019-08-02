@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\domain\services;
+namespace yii2bundle\rbac\domain\services;
 
 use Yii;
 use yii\rbac\Assignment;
@@ -8,16 +8,16 @@ use yii\web\ForbiddenHttpException;
 use yii\web\UnauthorizedHttpException;
 use yii2rails\domain\services\base\BaseService;
 use yii2rails\extension\yii\helpers\ArrayHelper;
-use yii2lab\rbac\domain\enums\RbacPermissionEnum;
-use yii2lab\rbac\domain\interfaces\services\ManagerInterface;
+use yii2bundle\rbac\domain\enums\RbacPermissionEnum;
+use yii2bundle\rbac\domain\interfaces\services\ManagerInterface;
 
 /**
  * Class RbacService
  *
- * @package yii2lab\rbac\domain\services
+ * @package yii2bundle\rbac\domain\services
  *
- * @property \yii2lab\rbac\domain\Domain $domain
- * @property \yii2lab\rbac\domain\interfaces\repositories\ManagerInterface $repository
+ * @property \yii2bundle\rbac\domain\Domain $domain
+ * @property \yii2bundle\rbac\domain\interfaces\repositories\ManagerInterface $repository
  */
 class ManagerService extends BaseService implements ManagerInterface {
 	

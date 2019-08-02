@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\domain\helpers;
+namespace yii2bundle\rbac\domain\helpers;
 
 use yii2rails\extension\code\helpers\generator\ClassGeneratorHelper;
 use yii2rails\extension\code\helpers\generator\EnumGeneratorHelper;

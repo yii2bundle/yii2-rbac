@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\api;
+namespace yii2bundle\rbac\api;
 
 use yii\base\Module as YiiModule;
 

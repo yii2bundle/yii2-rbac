@@ -1,13 +1,13 @@
 <?php
 
-namespace yii2lab\rbac\domain\entities;
+namespace yii2bundle\rbac\domain\entities;
 
 use yii2rails\domain\BaseEntity;
 
 /**
  * Class AssignmentEntity
  *
- * @package yii2lab\rbac\domain\entities
+ * @package yii2bundle\rbac\domain\entities
  *
  * @property $user_id
  * @property $item_name

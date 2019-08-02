@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2lab\rbac\api\controllers;
+namespace yii2bundle\rbac\api\controllers;
 
-use yii2lab\geo\domain\enums\GeoPermissionEnum;
-use yii2lab\rbac\domain\enums\RbacPermissionEnum;
+use yii2bundle\geo\domain\enums\GeoPermissionEnum;
+use yii2bundle\rbac\domain\enums\RbacPermissionEnum;
 use yii2lab\rest\domain\rest\ActiveControllerWithQuery as Controller;
 use yii2rails\extension\web\helpers\Behavior;
 

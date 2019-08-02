@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\domain\interfaces\repositories;
+namespace yii2bundle\rbac\domain\interfaces\repositories;
 
 use yii\rbac\Rule;
 

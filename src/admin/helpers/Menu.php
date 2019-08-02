@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2lab\rbac\admin\helpers;
+namespace yii2bundle\rbac\admin\helpers;
 
 use yii2rails\extension\menu\interfaces\MenuInterface;
-use yii2lab\rbac\domain\enums\RbacPermissionEnum;
+use yii2bundle\rbac\domain\enums\RbacPermissionEnum;
 
 class Menu implements MenuInterface {
 	

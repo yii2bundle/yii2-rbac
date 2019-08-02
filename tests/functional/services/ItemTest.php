@@ -343,7 +343,7 @@ class ItemTest extends Unit {
 		FileHelper::createDirectory($dir);
 		
 		$definition = [
-			'class' => 'yii2lab\rbac\domain\Domain',
+			'class' => 'yii2bundle\rbac\domain\Domain',
 			'repositories' => [
 				'rule' => [
 					'ruleFile' => self::DATA_ALIAS . SL . 'rules.php',
@@ -358,7 +358,7 @@ class ItemTest extends Unit {
 			],
 		];
 		
-		/** @var \yii2lab\rbac\domain\Domain $domainInstance */
+		/** @var \yii2bundle\rbac\domain\Domain $domainInstance */
 		$domainInstance = DomainHelper::createDomain('rbac', $definition);
 		return $domainInstance;
 	}

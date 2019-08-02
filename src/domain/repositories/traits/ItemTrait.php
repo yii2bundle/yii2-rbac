@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\domain\repositories\traits;
+namespace yii2bundle\rbac\domain\repositories\traits;
 
 use yii\rbac\Item;
 use yii\rbac\Role;

@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\admin\controllers;
+namespace yii2bundle\rbac\admin\controllers;
 
 use mdm\admin\models\Assignment;
 use Yii;

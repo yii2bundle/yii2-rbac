@@ -1,13 +1,13 @@
 <?php
 
-namespace yii2lab\rbac\domain\repositories\core;
+namespace yii2bundle\rbac\domain\repositories\core;
 
 use Yii;
 use yii\rbac\Assignment;
 use yii2module\account\domain\v3\entities\IdentityEntity;
 use yii2rails\domain\repositories\BaseRepository;
-use yii2lab\rbac\domain\interfaces\repositories\AssignmentInterface;
-use yii2lab\rbac\domain\helpers\AssignmentHelper;
+use yii2bundle\rbac\domain\interfaces\repositories\AssignmentInterface;
+use yii2bundle\rbac\domain\helpers\AssignmentHelper;
 
 class AssignmentRepository extends BaseRepository implements AssignmentInterface {
 	

@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\console\controllers;
+namespace yii2bundle\rbac\console\controllers;
 
 use Yii;
 use yii\web\UnauthorizedHttpException;

@@ -1,13 +1,13 @@
 <?php
 
-namespace yii2lab\rbac\domain\entities;
+namespace yii2bundle\rbac\domain\entities;
 
 use yii2rails\domain\BaseEntity;
 
 /**
  * Class RoleEntity
  * 
- * @package yii2lab\rbac\domain\entities
+ * @package yii2bundle\rbac\domain\entities
  * 
  * @property RoleEntity[] $roles
  * @property PermissionEntity[] $permissions

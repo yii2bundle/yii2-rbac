@@ -1,22 +1,22 @@
 <?php
 
-namespace yii2lab\rbac\domain\services;
+namespace yii2bundle\rbac\domain\services;
 
 use yii\web\NotFoundHttpException;
-use yii2lab\rbac\domain\entities\AssignmentEntity;
+use yii2bundle\rbac\domain\entities\AssignmentEntity;
 use yii2rails\domain\data\Query;
 use yii2rails\domain\exceptions\UnprocessableEntityHttpException;
 use yii2rails\domain\helpers\ErrorCollection;
 use yii2rails\domain\services\base\BaseActiveService;
-use yii2lab\rbac\domain\interfaces\services\AssignmentInterface;
-use yii2lab\rbac\domain\repositories\disc\AssignmentRepository;
+use yii2bundle\rbac\domain\interfaces\services\AssignmentInterface;
+use yii2bundle\rbac\domain\repositories\disc\AssignmentRepository;
 
 /**
  * Class AssignmentService
  *
- * @package yii2lab\rbac\domain\services
+ * @package yii2bundle\rbac\domain\services
  *
- * @property \yii2lab\rbac\domain\Domain $domain
+ * @property \yii2bundle\rbac\domain\Domain $domain
  * @property AssignmentRepository $repository
  */
 class AssignmentService extends BaseActiveService implements AssignmentInterface {

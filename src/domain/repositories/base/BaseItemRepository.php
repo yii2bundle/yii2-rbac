@@ -1,18 +1,18 @@
 <?php
 
-namespace yii2lab\rbac\domain\repositories\base;
+namespace yii2bundle\rbac\domain\repositories\base;
 
 use yii2rails\domain\repositories\BaseRepository;
 use yii\rbac\Item;
-use yii2lab\rbac\domain\helpers\ItemHelper;
+use yii2bundle\rbac\domain\helpers\ItemHelper;
 use yii\rbac\Permission;
 use yii\rbac\Role;
 use yii\base\InvalidArgumentException;
 use yii\base\InvalidCallException;
-use yii2lab\rbac\domain\repositories\traits\ItemTrait;
+use yii2bundle\rbac\domain\repositories\traits\ItemTrait;
 
 /**
- * @property \yii2lab\rbac\domain\Domain $domain
+ * @property \yii2bundle\rbac\domain\Domain $domain
  */
 abstract class BaseItemRepository extends BaseRepository {
 	

@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\domain\rules;
+namespace yii2bundle\rbac\domain\rules;
 
 use yii\rbac\Rule;
 use yii2rails\domain\BaseEntity;

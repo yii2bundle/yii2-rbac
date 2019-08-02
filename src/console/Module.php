@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\console;
+namespace yii2bundle\rbac\console;
 
 use yii\base\Module as YiiModule;
 

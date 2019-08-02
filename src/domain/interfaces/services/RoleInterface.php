@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\domain\interfaces\services;
+namespace yii2bundle\rbac\domain\interfaces\services;
 
 use yii\base\InvalidConfigException;
 use yii\rbac\Item;

@@ -1,20 +1,20 @@
 <?php
 
-namespace yii2lab\rbac\domain\services;
+namespace yii2bundle\rbac\domain\services;
 
 use yii\base\InvalidConfigException;
 use yii\rbac\Item;
 use yii\rbac\Rule;
 use yii2rails\domain\services\base\BaseService;
-use yii2lab\rbac\domain\interfaces\services\RuleInterface;
-use yii2lab\rbac\domain\repositories\disc\RuleRepository;
+use yii2bundle\rbac\domain\interfaces\services\RuleInterface;
+use yii2bundle\rbac\domain\repositories\disc\RuleRepository;
 
 /**
  * Class RuleService
  *
- * @package yii2lab\rbac\domain\services
+ * @package yii2bundle\rbac\domain\services
  *
- * @property \yii2lab\rbac\domain\Domain $domain
+ * @property \yii2bundle\rbac\domain\Domain $domain
  * @property RuleRepository $repository
  */
 class RuleService extends BaseService implements RuleInterface {

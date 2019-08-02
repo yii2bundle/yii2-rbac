@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2lab\rbac\admin;
+namespace yii2bundle\rbac\admin;
 
 use yii2rails\extension\web\helpers\Behavior;
-use yii2lab\rbac\domain\enums\RbacPermissionEnum;
+use yii2bundle\rbac\domain\enums\RbacPermissionEnum;
 
 class Module extends \mdm\admin\Module
 {
@@ -12,7 +12,7 @@ class Module extends \mdm\admin\Module
     public $viewPath = '//vendor/mdmsoft/yii2-admin/views';
     public $controllerMap = [
         'assignment' => [
-            'class' => 'yii2lab\rbac\admin\controllers\AssignmentController',
+            'class' => 'yii2bundle\rbac\admin\controllers\AssignmentController',
             'userClassName' => 'yii2module\account\domain\v3\models\User',
             'usernameField' => 'login',
         ],

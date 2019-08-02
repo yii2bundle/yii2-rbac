@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\domain\rbac;
+namespace yii2bundle\rbac\domain\rbac;
 
 use common\enums\rbac\PermissionEnum;
 use yii\base\Component;

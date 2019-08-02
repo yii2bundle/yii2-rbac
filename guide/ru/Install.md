@@ -13,7 +13,7 @@ composer require yii2module/yii2-rbac
 return [
 	'modules' => [
 		// ...
-		'rbac' => 'yii2lab\rbac\console\Module',
+		'rbac' => 'yii2bundle\rbac\console\Module',
 		// ...
 	],
 ];
@@ -25,7 +25,7 @@ return [
 return [
 	'components' => [
 		// ...
-		'rbac' => 'yii2lab\rbac\domain\Domain',
+		'rbac' => 'yii2bundle\rbac\domain\Domain',
 		// ...
 	],
 ];

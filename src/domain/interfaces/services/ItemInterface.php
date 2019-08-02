@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2lab\rbac\domain\interfaces\services;
+namespace yii2bundle\rbac\domain\interfaces\services;
 
 use yii\base\InvalidConfigException;
 use yii\rbac\Assignment;
@@ -11,7 +11,7 @@ use yii\rbac\Role;
 /**
  * Interface ItemInterface
  *
- * @package yii2lab\rbac\domain\interfaces\services
+ * @package yii2bundle\rbac\domain\interfaces\services
  *
  * @property array $defaultRoles
  */

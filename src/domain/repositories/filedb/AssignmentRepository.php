@@ -1,10 +1,10 @@
 <?php
 
-namespace yii2lab\rbac\domain\repositories\filedb;
+namespace yii2bundle\rbac\domain\repositories\filedb;
 
 use yii2rails\extension\filedb\repositories\base\BaseActiveFiledbRepository;
-use yii2lab\rbac\domain\interfaces\repositories\AssignmentInterface;
-use yii2lab\rbac\domain\repositories\traits\AssignmentTrait;
+use yii2bundle\rbac\domain\interfaces\repositories\AssignmentInterface;
+use yii2bundle\rbac\domain\repositories\traits\AssignmentTrait;
 
 class AssignmentRepository extends BaseActiveFiledbRepository implements AssignmentInterface {
 	
