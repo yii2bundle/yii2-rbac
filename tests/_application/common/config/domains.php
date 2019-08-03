@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\ArrayHelper;
-use yii2lab\test\helpers\TestHelper;
+use yii2tool\test\helpers\TestHelper;
 use yii2rails\domain\enums\Driver;
 use yii2bundle\rbac\domain\repositories\disc\ItemRepository;
 use yii2bundle\rbac\domain\repositories\disc\RuleRepository;

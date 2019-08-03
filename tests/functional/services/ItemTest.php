@@ -10,8 +10,8 @@ use yii\rbac\Item;
 use yii2rails\domain\enums\Driver;
 use yii2rails\domain\helpers\DomainHelper;
 use yii2rails\extension\yii\helpers\FileHelper;
-use yii2lab\test\helpers\DataHelper;
-use yii2lab\test\Test\Unit;
+use yii2tool\test\helpers\DataHelper;
+use yii2tool\test\Test\Unit;
 
 class ItemTest extends Unit {
 	

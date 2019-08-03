@@ -2,7 +2,7 @@
 
 namespace yii2bundle\rbac\tests\rest\v1;
 
-use yii2lab\test\enums\TypeEnum;
+use yii2tool\test\enums\TypeEnum;
 
 class RbacSchema
 {
