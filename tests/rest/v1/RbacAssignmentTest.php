@@ -7,7 +7,7 @@ use yii2bundle\rbac\tests\rest\v1\RbacSchema;
 use yii2lab\test\helpers\CurrentIdTestHelper;
 use yii2lab\test\helpers\TestHelper;
 use yii2lab\test\Test\BaseActiveApiTest;
-use yii2module\account\domain\v3\helpers\test\AuthTestHelper;
+use yii2bundle\account\domain\v3\helpers\test\AuthTestHelper;
 
 class RbacAssignmentTest extends BaseActiveApiTest
 {

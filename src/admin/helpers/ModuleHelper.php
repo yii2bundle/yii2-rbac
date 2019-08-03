@@ -13,7 +13,7 @@ class ModuleHelper {
             'controllerMap' => [
                 'assignment' => [
                     'class' => 'yii2bundle\rbac\admin\controllers\AssignmentController',
-                    'userClassName' => 'yii2module\account\domain\v3\models\User',
+                    'userClassName' => 'yii2bundle\account\domain\v3\models\User',
                     'usernameField' => 'login',
                 ],
             ],
