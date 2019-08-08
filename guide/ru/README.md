@@ -8,4 +8,3 @@ RBAC
 * [Разрешения](permission.md)
 * [Роли](role.md)
 * [Константы](const.md)
-* [Консольные команды](console.md)

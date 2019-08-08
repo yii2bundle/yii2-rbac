@@ -5,7 +5,6 @@
 
 * PermissionEnum
 * RoleEnum
-* RuleEnum
 
 Эти константы нужны для использования их в коде.
 
