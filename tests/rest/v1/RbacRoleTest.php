@@ -19,7 +19,7 @@ class RbacRoleTest extends BaseActiveApiTest
     public function testAll()
     {
         AuthTestHelper::authByLogin('admin');
-        $this->readCollection($this->resource, [], RbacSchema::$item, 9);
+        $this->readCollection($this->resource, [], RbacSchema::$item, true);
     }
 
     public function testOne()
