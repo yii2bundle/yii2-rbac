@@ -8,6 +8,7 @@ use yii2lab\db\domain\db\MigrationCreateTable as Migration;
 class m171122_135428_create_user_assignment_table extends Migration
 {
 	public $table = '{{%user_assignment}}';
+	public $tableComment = 'Назначенные роли пользователям';
 
 	/**
 	 * @inheritdoc
